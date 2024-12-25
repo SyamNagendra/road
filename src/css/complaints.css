@@ -1,0 +1,68 @@
+/* General Container */
+.complaints-filed-container {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #c1f1a3, #fbd1a2);
+    padding: 20px;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  /* Back Button */
+  .back-button-container {
+    margin-bottom: 10px;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  /* Header */
+  .page-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  /* Complaints List */
+  .complaints-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .complaint-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+  }
+  
+  .complaint-info {
+    flex: 1;
+  }
+  
+  .complaint-id {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .road-name {
+    font-size: 14px;
+  }
+  
+  .complaint-status {
+    width: 20px;
+    height: 20px;
+    background-color: #b22222; /* Dark red */
+    border-radius: 50%;
+  }
+  

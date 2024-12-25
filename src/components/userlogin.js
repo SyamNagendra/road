@@ -21,20 +21,16 @@ export default function userlogin() {
       </div>
 
       <form className="login-form">
-        <input
-          type="email"
-          placeholder="Email"
-          className="input-field"
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          className="input-field"
-        />
+        <input type="email" placeholder="Email" className="input-field" />
+        <input type="password" placeholder="Password" className="input-field" />
         <a href="#" className="forgot-password">
           forgot password
         </a>
-        <button type="submit" className="login-button">
+        <button
+          type="submit"
+          className="login-button"
+          onClick={() => navigate("/addcomp")}
+        >
           Login →
         </button>
       </form>

@@ -1,0 +1,105 @@
+/* General Container */
+.complaint-container {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #c1f1a3, #fbd1a2);
+    padding: 20px;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  /* Back Button */
+  .back-button-container {
+    margin-bottom: 10px;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  /* Title */
+  .complaint-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  /* Upload Section */
+  .upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .upload-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #f37070;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .upload-text {
+    font-size: 14px;
+    color: #000;
+    margin-top: 10px;
+  }
+  
+  /* Form Styling */
+  .complaint-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  /* Submit Button */
+  .submit-button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #37a837;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .submit-button:hover {
+    background-color: #2e8b2e;
+  }
+  

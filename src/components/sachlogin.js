@@ -34,7 +34,7 @@ export default function sachlogin() {
         <a href="#" className="forgot-password">
           forgot password
         </a>
-        <button type="submit" className="login-button">
+        <button type="submit" className="login-button" onClick={() => navigate('/addcomp')}>
           Login →
         </button>
       </form>
