@@ -34,7 +34,7 @@ export default function govlogin() {
         <a href="#" className="forgot-password">
           forgot password
         </a>
-        <button type="submit" className="login-button">
+        <button type="submit" className="login-button" onClick={() => navigate("/govdash")}>
           Login →
         </button>
       </form>

@@ -8,6 +8,7 @@ import UserLogin from "./components/userlogin";
 import AddComplaint from "./components/add_comp";
 import RoadDash from "./components/road_dash";
 import Complaint from "./components/complaints";
+import GovDash from "./components/gov_dash";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/addcomp" element={<AddComplaint />} />
         <Route path="/roaddash" element={<RoadDash />} />
         <Route path="/complaints" element={<Complaint />} />
+        <Route path="/govdash" element={<GovDash/>} /> 
       </Routes>
     </Router>
   );
