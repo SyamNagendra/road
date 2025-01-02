@@ -14,6 +14,14 @@ export default function ComplaintsFiled() {
     { id: 5, roadName: "Road Name 5" },
   ];
 
+  const handleComplaintClick = (id) => {
+    if ([1, 3, 5].includes(id)) {
+      navigate(`/work`);
+    } else if ([2, 4].includes(id)) {
+      navigate(`/done`);
+    }
+  };
+
   return (
     <div className="complaints-filed-container">
       {/* Back Button */}
@@ -29,12 +37,15 @@ export default function ComplaintsFiled() {
       {/* Complaints List */}
       <div className="complaints-list">
         {complaints.map((complaint) => (
-          <div className="complaint-card" key={complaint.id}>
+          <div
+            className="complaint-card"
+            key={complaint.id}
+            onClick={() => handleComplaintClick(complaint.id)}
+          >
             <div className="complaint-info">
               <h2 className="complaint-id">Complaint {complaint.id}</h2>
               <p className="road-name">Road Name: {complaint.roadName}</p>
             </div>
-            <div className="complaint-status"></div>
           </div>
         ))}
       </div>

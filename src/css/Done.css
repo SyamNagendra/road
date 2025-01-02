@@ -1,0 +1,54 @@
+/* SuccessPage.css */
+
+.container {
+    font-family: "Arial, sans-serif";
+    background-color: #eaf7ea;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 16px;
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #333;
+    padding: 8px;
+  }
+  
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #ffdd57, #3abff8);
+  }
+  
+  .icon {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+  }
+  
+  .text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    background-color: #fefefe;
+    padding: 12px 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  

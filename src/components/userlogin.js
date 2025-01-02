@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "../css/LoginPage.css";
 import roadMinistryIcon from "../assets/user.jpg"; // Replace with the correct path
 
-export default function userlogin() {
+export default function Userlogin() {
   const navigate = useNavigate();
 
   return (

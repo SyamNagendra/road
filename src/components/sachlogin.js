@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "../css/LoginPage.css";
 import roadMinistryIcon from "../assets/sach.jpg"; // Replace with the correct path
 
-export default function sachlogin() {
+export default function Sachlogin() {
   const navigate = useNavigate();
 
   return (
@@ -34,7 +34,7 @@ export default function sachlogin() {
         <a href="#" className="forgot-password">
           forgot password
         </a>
-        <button type="submit" className="login-button" onClick={() => navigate('/addcomp')}>
+        <button type="submit" className="login-button" onClick={() => navigate('/sachdash')}>
           Login →
         </button>
       </form>

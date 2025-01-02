@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #b3e6b3, #f0c27b);
-  height: 100vh;
+  background-color: #d8f2d4;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;

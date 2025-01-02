@@ -1,0 +1,107 @@
+/* General container for the page */
+.welcome-container {
+    background-color: #d8f2d4; /* Light green background */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  /* Header styles */
+  .welcome-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  
+  .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .welcome-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1b5e20; /* Dark green */
+  }
+  
+  /* Image section */
+  .image-container {
+    margin: 20px 0;
+  }
+  
+  .pothole-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Content section */
+  .content-section {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-title {
+    font-size: 20px;
+    color: #1b5e20;
+    margin-bottom: 10px;
+  }
+  
+  .section-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Popup Menu Styles */
+.popup-menu {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    background-color: #f5f5f5;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  .menu-option {
+    background-color: #b8e994; /* Light green button */
+    color: #000;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .menu-option:hover {
+    background-color: #78e08f; /* Darker green on hover */
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #000;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  

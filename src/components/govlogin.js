@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "../css/LoginPage.css";
 import roadMinistryIcon from "../assets/gov.jpg"; // Replace with the correct path
 
-export default function govlogin() {
+export default function Govlogin() {
   const navigate = useNavigate();
 
   return (
