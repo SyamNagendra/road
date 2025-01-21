@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/AddComplaint.css";
 
 export default function AddComplaint() {
   const navigate = useNavigate();
+  const [imagePreview, setImagePreview] = useState(null);
+
+  const handleImageUpload = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = () => {
+        setImagePreview(reader.result);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
 
   return (
     <div className="complaint-container">
@@ -19,8 +31,28 @@ export default function AddComplaint() {
 
       {/* Upload Picture */}
       <div className="upload-container">
-        <div className="upload-icon">+</div>
-        <p className="upload-text">Upload the picture</p>
+        {imagePreview ? (
+          <img
+            src={imagePreview}
+            alt="Uploaded preview"
+            className="image-preview"
+          />
+        ) : (
+          <>
+            <label htmlFor="file-upload" className="upload-icon">
+              +
+            </label>
+            <p className="upload-text">Upload the picture</p>
+            <input
+              type="file"
+              id="file-upload"
+              accept="image/*"
+              capture="environment"
+              onChange={handleImageUpload}
+              style={{ display: "none" }}
+            />
+          </>
+        )}
       </div>
 
       {/* Complaint Form */}

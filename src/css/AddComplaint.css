@@ -103,3 +103,12 @@
     background-color: #2e8b2e;
   }
   
+
+  .image-preview {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  

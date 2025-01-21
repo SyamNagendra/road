@@ -34,7 +34,7 @@ const ComplaintsPage = () => {
           className="icon"
         />
       </div>
-      <button className="button">List of complaints</button>
+      <button className="button"onClick={ ()=> navigate('/complaints')}>List of complaints</button>
     </div>
   );
 };
