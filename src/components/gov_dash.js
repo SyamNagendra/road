@@ -18,7 +18,7 @@ export default function Dashboard() {
     <div className="dashboard-container">
       {/* Back Button */}
       <div className="back-button-container">
-        <button className="back-button" onClick={() => navigate(-1)}>
+        <button className="back-button" onClick={() => navigate("/main")}>
           ←
         </button>
       </div>

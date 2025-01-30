@@ -7,7 +7,7 @@ const HomePage = () => {
   const navigate = useNavigate();
 
   const handleBackClick = () => {
-    navigate(-1); // Navigate back to the previous page
+    navigate("/main"); // Navigate back to the previous page
   };
 
   const handleButtonClick = (route) => {

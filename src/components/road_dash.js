@@ -9,7 +9,7 @@ const ComplaintsPage = () => {
   const navigate = useNavigate();
 
   const handleBackClick = () => {
-    navigate(-1); // Navigate to the previous page
+    navigate("/main"); // Navigate to the previous page
   };
 
   return (
