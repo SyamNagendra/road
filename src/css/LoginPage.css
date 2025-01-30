@@ -1,25 +1,16 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #d8f2d4; /* Matches the green background */
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+/* Center everything */
 .login-container {
   text-align: center;
-  width: 100%;
-  max-width: 400px;
-  margin: auto;
+  max-width: 365px;
+  padding: 20px;
   position: relative;
 }
 
+/* Back button */
 .back-button-container {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 15px;
+  left: 15px;
 }
 
 .back-button {
@@ -28,53 +19,65 @@ body {
   background: transparent;
   cursor: pointer;
   color: #333;
+  position: absolute;
+  margin-top: 16px;
 }
 
+/* Header Styles */
 .header {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-}
-
-.icon {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 1rem;
 }
 
+/* Image (Sachivalayam Logo) */
+.icon {
+  width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 20px 0;
+    object-fit: cover;
+}
+
+/* Page Title */
 .page-title {
   font-size: 1.2rem;
   font-weight: bold;
   color: #333;
   text-transform: uppercase;
-  letter-spacing: 0.05rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 
+/* Login Title */
 .login-title {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: bold;
   color: #000;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
+/* Login Form */
 .login-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.2rem;
+  gap: 1rem;
 }
 
+/* Input Fields */
 .input-field {
-  width: 80%;
-  padding: 10px;
+  width: 85%;
+  padding: 12px;
   border: none;
   border-radius: 25px;
-  background-color: #fff; /* Matches the white input fields */
+  background-color: #fefaf5;
   color: #333;
   font-size: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .input-field::placeholder {
@@ -82,24 +85,25 @@ body {
   font-size: 0.9rem;
 }
 
+/* Forgot Password */
 .forgot-password {
   font-size: 0.9rem;
-  color: #777;
+  color: #5c8a5c;
   text-decoration: none;
   cursor: pointer;
-  margin-bottom: 1rem;
 }
 
 .forgot-password:hover {
   text-decoration: underline;
 }
 
+/* Login Button */
 .login-button {
-  width: 80%;
+  width: 85%;
   padding: 12px;
   border: none;
   border-radius: 25px;
-  background-color: #98d6a8; /* Matches the green login button */
+  background-color: #98d6a8;
   color: #333;
   font-size: 1rem;
   font-weight: bold;

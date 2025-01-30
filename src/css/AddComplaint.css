@@ -1,114 +1,120 @@
 /* General Container */
 .complaint-container {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #c1f1a3, #fbd1a2);
-    padding: 20px;
-    height: 100vh;
-    box-sizing: border-box;
-  }
-  
-  /* Back Button */
-  .back-button-container {
-    margin-bottom: 10px;
-  }
-  
-  .back-button {
-    background: none;
-    border: none;
-    font-size: 24px;
-    color: #000;
-    cursor: pointer;
-  }
-  
-  /* Title */
-  .complaint-title {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: #000;
-    margin-bottom: 20px;
-  }
-  
-  /* Upload Section */
-  .upload-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .upload-icon {
-    width: 50px;
-    height: 50px;
-    background-color: #f37070;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .upload-text {
-    font-size: 14px;
-    color: #000;
-    margin-top: 10px;
-  }
-  
-  /* Form Styling */
-  .complaint-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .input-group {
-    margin-bottom: 15px;
-  }
-  
-  .input-group label {
-    font-size: 14px;
-    font-weight: bold;
-    color: #000;
-  }
-  
-  .input-group input,
-  .input-group textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: none;
-    border-radius: 5px;
-    background: #000;
-    color: #fff;
-    font-size: 14px;
-    outline: none;
-  }
-  
-  /* Submit Button */
-  .submit-button {
-    width: 100%;
-    padding: 15px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
-    background-color: #37a837;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  .submit-button:hover {
-    background-color: #2e8b2e;
-  }
-  
+  font-family: Arial, sans-serif;
+  background: #f5f5f5; /* Light grey background */
+  padding: 20px;
+  height: 100vh;
+  width: 40vh;
+  box-sizing: border-box;
+  margin-top: 90px;
+}
 
-  .image-preview {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 10px;
-  }
-  
+/* Back Button */
+.back-button-container {
+  margin-bottom: 20px;
+  margin-left: +26px;
+  margin-top: -40px;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #333; /* Darker color for better visibility */
+  cursor: pointer;
+}
+
+/* Title */
+.complaint-title {
+  text-align: center;
+  font-size: 28px; /* Larger font size */
+  font-weight: bold;
+  color: #333; /* Darker color for better visibility */
+  margin-bottom: 30px;
+}
+
+/* Upload Section */
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.upload-icon {
+  width: 60px; /* Slightly larger */
+  height: 60px; /* Slightly larger */
+  background-color: #4CAF50; /* Green color */
+  color: white;
+  font-size: 28px; /* Larger font size */
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.upload-text {
+  font-size: 16px; /* Larger font size */
+  color: #333; /* Darker color for better visibility */
+  margin-top: 10px;
+}
+
+/* Form Styling */
+.complaint-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  font-size: 16px; /* Larger font size */
+  font-weight: bold;
+  color: #333; /* Darker color for better visibility */
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px; /* Slightly larger padding */
+  margin-top: 8px;
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px;
+  background: #fff; /* White background */
+  color: #333; /* Darker text color */
+  font-size: 16px; /* Larger font size */
+  outline: none;
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px; /* Larger font size */
+  font-weight: bold;
+  color: #fff;
+  background-color: #4CAF50; /* Green color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.submit-button:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Image Preview */
+.image-preview {
+  width: 120px; /* Slightly larger */
+  height: 120px; /* Slightly larger */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}

@@ -14,12 +14,14 @@
     margin-bottom: 20px;
   }
   
-  .profile-icon {
-    width: 40px;
-    height: 40px;
+  .profile-icon img {
+    width: 50px; /* Updated width */
+    height: 50px; /* Updated height */
     background-color: #fff;
     border-radius: 50%;
+    object-fit: cover; /* Changed to cover for better fitting */
   }
+
   
   .menu-icon {
     font-size: 24px;
@@ -104,4 +106,3 @@
     border: none;
     cursor: pointer;
   }
-  

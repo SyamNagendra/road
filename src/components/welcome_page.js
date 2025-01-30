@@ -18,9 +18,9 @@ export default function WelcomePage() {
       {/* Header */}
       <div className="welcome-header">
         <div className="profile-icon">
-            {/* <img src={ logo }/> */}
+            <img src= { logo } alt="Logo"/>
         </div>
-        <h1 className="welcome-title">Welcome Title</h1>
+        <h1 className="welcome-title">SafeRoute</h1>
         <div className="menu-icon" onClick={toggleMenu}>
           ☰ {/* Menu Icon */}
         </div>

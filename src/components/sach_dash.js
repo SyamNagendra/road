@@ -21,7 +21,7 @@ const HomePage = () => {
       </button>
       <h2 className="title">WELCOME USERNAME</h2>
       <img
-        src="https://via.placeholder.com/120" // Replace with your actual image URL
+        src={require('../assets/sach.jpg')}
         alt="Logo"
         className="logo"
       />

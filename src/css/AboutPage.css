@@ -1,25 +1,31 @@
 /* AboutPage.css */
 
 .container {
-    font-family: "Arial, sans-serif";
-    background-color: #eaf7ea;
-    padding: 16px;
-    color: #333;
-    height: 100vh;
-    position: relative;
-  }
+  font-family: "Arial, sans-serif";
+  background-color: #eaf7ea;
+  padding: 16px;
+  margin: 0 auto; /* Center the container */
+  color: #333;
+  min-height: 100vh; /* Ensures full page height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centers content */
+  text-align: center; /* Ensures text is centered */
+}
+
   
   .back-button {
-    position: absolute;
+    position: relative;
     top: 16px;
-    left: 16px;
+    margin-left: +200px;
     font-size: 24px;
     cursor: pointer;
     background-color: transparent;
     border: none;
     color: #333;
     padding: 8px;
-    margin-bottom: 16px;
+    z-index: 1000;
   }
   
   .section-title {

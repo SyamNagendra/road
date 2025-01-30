@@ -32,13 +32,6 @@ const AboutPage = () => {
         promoting collaboration, we’re helping build safer streets for drivers,
         cyclists, and pedestrians alike.
       </p>
-      <div className="image-container">
-        <img
-          className="image"
-          src="https://via.placeholder.com/400" // Replace with the actual image URL
-          alt="A road to safer streets"
-        />
-      </div>
     </div>
   );
 };
