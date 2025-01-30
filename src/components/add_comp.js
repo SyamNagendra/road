@@ -47,54 +47,39 @@ export default function AddComplaint() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
+  
     if (!prediction) {
       alert("Please upload an image before submitting.");
       return;
     }
-
+  
     const { predicted_class, confidence } = prediction;
-
+  
     // Conditions for allowing submission
     if (predicted_class === "Normal Road" && confidence > 0.7) {
       alert("Submission not allowed: The road is classified as 'Normal Road' with high confidence.");
       return;
     }
-
+  
     if (predicted_class === "Pothole Road" && confidence <= 0.5) {
       alert("Confidence too low: Please upload a clearer image.");
       return;
     }
-
+  
     // Collect form data
     const formData = {
-      street: document.getElementById("street").value,
-      ward: document.getElementById("ward").value,
-      village: document.getElementById("village").value,
-      mandal: document.getElementById("mandal").value,
-      distance: document.getElementById("distance").value,
-      description: document.getElementById("description").value,
-      predicted_class,
-      confidence,
+      id: Date.now(), // Unique ID
+      roadName: document.getElementById("street").value,
     };
-
-    console.log("Form Data:", formData);
-
-    // Here, you can send the formData to your backend
-    // Example:
-    // fetch("your_backend_endpoint", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify(formData),
-    // }).then(response => response.json()).then(data => {
-    //   console.log("Server Response:", data);
-    //   navigate("/success"); // Redirect on successful submission
-    // });
-
-    navigate(""); // Navigate after successful submission
+  
+    // Save to localStorage
+    const existingComplaints = JSON.parse(localStorage.getItem("complaints")) || [];
+    existingComplaints.push(formData);
+    localStorage.setItem("complaints", JSON.stringify(existingComplaints));
+  
+    navigate("/complaints"); // Redirect to complaints page
   };
+  
 
   return (
     <div className="complaint-container">
