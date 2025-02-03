@@ -1,0 +1,48 @@
+.admin-complaint-details {
+    padding: 20px;
+  }
+
+  .admin-complaint-container{
+    padding: 15px;
+  }
+  
+  .admin-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .approve-button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .reject-button {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .status-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  .yellow {
+    background-color: yellow;
+  }
+  
+  .admin-complaint-container .back-button {
+    margin-left: 6px;
+  }

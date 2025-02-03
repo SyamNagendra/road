@@ -25,11 +25,6 @@ export default function LoginScreen() {
                 </div>
 
                 <div className="login-box">
-                    <img src={require('../assets/gov.jpg')} alt="Govt Icon" className="icon" />
-                    <button className="button-text" onClick={() => navigate("/govlogin")}>GOVT</button>
-                </div>
-
-                <div className="login-box">
                     <img src={require('../assets/user.jpg')} alt="User Icon" className="icon" />
                     <button className="button-text" onClick={() => navigate('/userlogin')}>User</button>
                 </div>

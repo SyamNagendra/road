@@ -1,0 +1,64 @@
+.complaint-details-container {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    padding: 20px;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .back-button-container {
+    margin-bottom: 20px;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .page-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .uploaded-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+  }
+  
+  .details-section p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .status-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .status-badge {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #fff;
+  }
+  
+  .in-progress {
+    background-color: #ff9800;
+  }
+  
+  .completed {
+    background-color: #4caf50;
+  }

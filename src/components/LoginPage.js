@@ -1,17 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/LoginPage.css";
-import roadMinistryIcon from "../assets/road.jpg"; // Replace with the correct path
+import roadMinistryIcon from "../assets/road.jpg"; 
 
-export default function LoginPage() {
+export default function AdminLogin() {
   const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+
+    // Dummy authentication (replace with actual API call)
+    if (email === "admin@example.com" && password === "admin123") {
+      localStorage.setItem("role", "admin"); // Store admin role
+      navigate("/roaddash"); // Redirect to admin dashboard
+    } else {
+      alert("Invalid credentials! Please try again.");
+    }
+  };
 
   return (
     <div className="login-container">
       <div className="back-button-container">
-        <button className="back-button" onClick={() => navigate(-1)}>
-          ←
-        </button>
+        <button className="back-button" onClick={() => navigate(-1)}>←</button>
       </div>
 
       <div className="header">
@@ -20,23 +32,11 @@ export default function LoginPage() {
         <h2 className="login-title">Login</h2>
       </div>
 
-      <form className="login-form">
-        <input
-          type="email"
-          placeholder="Email"
-          className="input-field"
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          className="input-field"
-        />
-        <a href="#" className="forgot-password">
-          forgot password
-        </a>
-        <button type="submit" className="login-button" onClick={() => navigate("/roaddash")}>
-          Login →
-        </button>
+      <form className="login-form" onSubmit={handleLogin}>
+        <input type="email" placeholder="Email" className="input-field" value={email} onChange={(e) => setEmail(e.target.value)} required />
+        <input type="password" placeholder="Password" className="input-field" value={password} onChange={(e) => setPassword(e.target.value)} required />
+        <a href="#" className="forgot-password">Forgot password?</a>
+        <button type="submit" className="login-button">Login →</button>
       </form>
     </div>
   );

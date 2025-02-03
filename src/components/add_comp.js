@@ -55,7 +55,6 @@ export default function AddComplaint() {
   
     const { predicted_class, confidence } = prediction;
   
-    // Conditions for allowing submission
     if (predicted_class === "Normal Road" && confidence > 0.7) {
       alert("Submission not allowed: The road is classified as 'Normal Road' with high confidence.");
       return;
@@ -66,19 +65,25 @@ export default function AddComplaint() {
       return;
     }
   
-    // Collect form data
     const formData = {
-      id: Date.now(), // Unique ID
+      id: Date.now(),
       roadName: document.getElementById("street").value,
+      street: document.getElementById("street").value,
+      ward: document.getElementById("ward").value,
+      village: document.getElementById("village").value,
+      mandal: document.getElementById("mandal").value,
+      distance: document.getElementById("distance").value,
+      description: document.getElementById("description").value,
+      status: "pending",
     };
   
-    // Save to localStorage
     const existingComplaints = JSON.parse(localStorage.getItem("complaints")) || [];
     existingComplaints.push(formData);
     localStorage.setItem("complaints", JSON.stringify(existingComplaints));
   
-    navigate("/complaints"); // Redirect to complaints page
+    navigate("/complaints");
   };
+  
   
 
   return (
