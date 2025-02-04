@@ -79,7 +79,7 @@
 
 .input-group input,
 .input-group textarea {
-  width: 100%;
+  width: 280px;
   padding: 12px; /* Slightly larger padding */
   margin-top: 8px;
   border: 1px solid #ccc; /* Light border */
@@ -101,7 +101,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 25px;
   margin-bottom: 20px;
   margin-left: 20px;
 }

@@ -8,7 +8,7 @@ export default function LoginScreen() {
     return (
         <div className="container">
              {/* Back Button */}
-             <button className="back-button" onClick={() => navigate(-1)}>←</button>
+             <button className="back-button" onClick={() => navigate("/")}>←</button>
 
             
             <h1 className="title">LOGINS</h1>

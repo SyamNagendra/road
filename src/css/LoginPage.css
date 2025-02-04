@@ -7,10 +7,12 @@
 }
 
 /* Back button */
-.back-button-container {
+.login-container .back-button-container {
   position: absolute;
   top: 15px;
   left: 15px;
+  margin-left: -100px;
+  margin-top: -150px;
 }
 
 .back-button {
@@ -33,7 +35,7 @@
 }
 
 /* Image (Sachivalayam Logo) */
-.icon {
+.header .icon {
   width: 120px;
     height: 120px;
     border-radius: 50%;

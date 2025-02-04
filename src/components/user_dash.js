@@ -19,9 +19,9 @@ const HomePage = () => {
       <button className="back-button" onClick={handleBackClick}>
         <FaArrowLeft />
       </button>
-      <h2 className="title">SACHIVALAYAM</h2>
+      <h2 className="title">USER</h2>
       <img
-        src={require('../assets/sach.jpg')}
+        src={require('../assets/user.jpg')}
         alt="Logo"
         className="logo"
       />
@@ -39,9 +39,9 @@ const HomePage = () => {
       </button>
       <button
         className="button"
-        onClick={() => handleButtonClick("/feedbacklist")}
+        onClick={() => handleButtonClick("/feedback")}
       >
-        View the Feedback Of Users
+        Give Feedback
       </button>
     </div>
   );

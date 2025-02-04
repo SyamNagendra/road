@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import "../css/roadDash.css";
-import logo from "../assets/road.jpg";
+// import logo from "../assets/road.jpg";
 import img from "../assets/image 7.png";
 
 const ComplaintsPage = () => {
@@ -18,14 +18,14 @@ const ComplaintsPage = () => {
         <FaArrowLeft />
       </button>
       <div className="header">
-        <div className="header-title">WELCOME!!</div>
-        <div className="profile">
+        <div className="header-title">Road Ministry</div>
+        {/* <div className="profile">
           <img
             src= { logo } // Replace with the actual profile image URL
             alt="Profile"
           />
           <span>ROAD MINISTRY</span>
-        </div>
+        </div> */}
       </div>
       <div className="icon-container">
         <img

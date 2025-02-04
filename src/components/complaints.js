@@ -32,6 +32,15 @@ export default function ComplaintsFiled() {
     }
   };
 
+  // Handle Clear Complaints (Admin Only)
+  const handleClearComplaints = () => {
+    if (window.confirm("Are you sure you want to clear all complaints? This action cannot be undone.")) {
+      localStorage.removeItem("complaints"); // Clear complaints from localStorage
+      setComplaints([]); // Reset complaints state
+      alert("All complaints have been cleared.");
+    }
+  };
+
   return (
     <div className="complaints-filed-container">
       {/* Back Button */}
@@ -64,6 +73,13 @@ export default function ComplaintsFiled() {
           <p className="no-complaints">No complaints filed yet.</p>
         )}
       </div>
+
+      {/* Show Clear Complaints Button for Admin */}
+      {role === "admin" && complaints.length > 0 && (
+        <button className="clear-button" onClick={handleClearComplaints}>
+          Clear All Complaints
+        </button>
+      )}
     </div>
   );
 }

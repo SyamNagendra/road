@@ -8,13 +8,23 @@ export default function SachLogin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const validUsers = [
+    { email: "sach73@gmail.com", password: "sach73", role: "user" },
+    { email: "sach75@gmail.com", password: "sach75", role: "admin" },
+    { email: "sach80@gmail.com", password: "sach80", role: "user" },
+  ];
+
   const handleLogin = (e) => {
     e.preventDefault();
 
-    // Dummy authentication (replace with actual API call)
-    if (email === "user@example.com" && password === "user123") {
+    // Check if the entered credentials match any user in the list
+    const user = validUsers.find(
+      (u) => u.email === email && u.password === password
+    );
+
+    if (user) {
       localStorage.setItem("role", "sachivalayam"); // Store user role
-      navigate("/sachdash"); // Redirect to user dashboard
+      navigate("/sachdash"); // Redirect based on role
     } else {
       alert("Invalid credentials! Please try again.");
     }

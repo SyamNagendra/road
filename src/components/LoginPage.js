@@ -12,7 +12,7 @@ export default function AdminLogin() {
     e.preventDefault();
 
     // Dummy authentication (replace with actual API call)
-    if (email === "admin@example.com" && password === "admin123") {
+    if (email === "govt@gmail.com" && password === "govt123") {
       localStorage.setItem("role", "admin"); // Store admin role
       navigate("/roaddash"); // Redirect to admin dashboard
     } else {
@@ -23,7 +23,7 @@ export default function AdminLogin() {
   return (
     <div className="login-container">
       <div className="back-button-container">
-        <button className="back-button" onClick={() => navigate(-1)}>←</button>
+        <button className="back-button" onClick={() => navigate("/main")}>←</button>
       </div>
 
       <div className="header">

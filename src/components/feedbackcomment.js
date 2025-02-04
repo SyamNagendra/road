@@ -11,9 +11,23 @@ const FeedbackComments = () => {
       alert("Please enter your comments or suggestions.");
       return;
     }
+  
+    // Retrieve existing feedback
+    let feedbackData = JSON.parse(localStorage.getItem("feedbackData")) || [];
+  
+    // Update the latest feedback entry with comments
+    if (feedbackData.length > 0) {
+      feedbackData[feedbackData.length - 1].comments = comments;
+    }
+  
+    // Save updated feedback back to localStorage
+    localStorage.setItem("feedbackData", JSON.stringify(feedbackData));
+  
     alert("Thank you for your feedback!");
     setComments("");
+    navigate("/userdash"); // Redirect to dashboard or feedback list
   };
+  
 
   return (
     <div className="feedback-comments-container">

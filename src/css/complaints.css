@@ -68,3 +68,34 @@
     border-radius: 50%;
   }
   
+  .clear-button {
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .clear-button:hover {
+    background-color: darkred;
+  }
+  
+  .no-complaints {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .no-complaints::before {
+    content: "😞 "; /* Optional: Adds a sad face emoji for emphasis */
+    font-size: 24px;
+  }
+  

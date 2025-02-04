@@ -17,6 +17,8 @@ import Done from "./components/done";
 import ComplaintsDetails from "./components/com_details";
 import AdminComplaintDetails from "./components/admin_comp";
 import RejectedPage from "./components/rejected";
+import UserDash from "./components/user_dash";
+import FeedbackList from "./components/feedback_list";
 
 function App() {
   return (
@@ -39,6 +41,8 @@ function App() {
         <Route path="/compdetails" element={<ComplaintsDetails/>} />
         <Route path="/admin/complaint/:id" element={<AdminComplaintDetails />} />
         <Route path="/reject" element={<RejectedPage />} />
+        <Route path="/userdash" element={<UserDash />} />
+        <Route path="/feedbacklist" element={<FeedbackList />} />
       </Routes>
     </Router>
   );

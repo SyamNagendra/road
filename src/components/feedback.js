@@ -6,8 +6,18 @@ const FeedbackForm = () => {
   const navigate = useNavigate();
 
   const handleNext = () => {
-    // Handle form submission or navigation
-    navigate("/feedbackcomments"); // Update the path to your next page
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const checkboxes = document.querySelectorAll("input[name='category']:checked");
+    const categories = Array.from(checkboxes).map(checkbox => checkbox.value);
+  
+    const newFeedback = { name, phone, categories };
+  
+    let existingFeedback = JSON.parse(localStorage.getItem("feedbackData")) || [];
+    existingFeedback.push(newFeedback);
+    localStorage.setItem("feedbackData", JSON.stringify(existingFeedback));
+  
+    navigate("/feedbackcomments");
   };
 
   return (
