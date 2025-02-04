@@ -13,14 +13,12 @@
     justify-content: space-between;
   }
   
-  .back-button {
+.container .back-button {
     position: absolute;
     top: 16px;
-    margin-left: -46px;
-    font-size: 24px;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
+    margin-left: +356px;
+    margin-top: -150px;
+    font-size: 24px;;
     color: #333;
     padding: 8px;
   }

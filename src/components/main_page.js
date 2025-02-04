@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/LoginScreen.css";
+import { FaArrowLeft } from "react-icons/fa";
 
 export default function LoginScreen() {
     const navigate  = useNavigate();
@@ -8,7 +9,7 @@ export default function LoginScreen() {
     return (
         <div className="container">
              {/* Back Button */}
-             <button className="back-button" onClick={() => navigate("/")}>←</button>
+             <button className="back-button" onClick={() => navigate("/")}><FaArrowLeft /></button>
 
             
             <h1 className="title">LOGINS</h1>

@@ -79,7 +79,7 @@
 
 .input-group input,
 .input-group textarea {
-  width: 280px;
+  width: 100%;
   padding: 12px; /* Slightly larger padding */
   margin-top: 8px;
   border: 1px solid #ccc; /* Light border */

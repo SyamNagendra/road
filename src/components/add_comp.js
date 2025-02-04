@@ -84,16 +84,27 @@ export default function AddComplaint() {
     navigate("/complaints");
   };
   
+  const handleBack = () => {
+    const role = localStorage.getItem("role"); // Retrieve user role from local storage
+    if (role === "user") {
+      navigate("/userdash");
+    } else {
+      navigate("/sachdash");
+    }
+  };
+  
   
 
   return (
     <div className="complaint-container">
       {/* Back Button */}
-      <div className="back-button-container">
-        <button className="back-button" onClick={() => navigate("/sachdash")}>
-          ←
-        </button>
-      </div>
+      {/* Back Button */}
+<div className="back-button-container">
+  <button className="back-button" onClick={handleBack}>
+    ←
+  </button>
+</div>
+
 
       {/* Page Title */}
       <h1 className="complaint-title">Add Complaint</h1>
@@ -116,7 +127,7 @@ export default function AddComplaint() {
               type="file"
               id="file-upload"
               accept="image/*"
-              capture="environment"
+              // capture="environment"
               onChange={handleImageUpload}
               style={{ display: "none" }}
             />
